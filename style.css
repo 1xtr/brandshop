@@ -10,7 +10,7 @@ a {
   text-decoration: none;
 }
 .center {
-  padding: 0 calc(-520%);
+  padding: 0 calc(50vw - 570px);
 }
 .header {
   display: flex;
