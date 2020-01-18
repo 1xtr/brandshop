@@ -10,7 +10,7 @@ a {
   text-decoration: none;
 }
 .center {
-  padding: 0 calc(50vw - 570px);
+  padding: 0 calc(50% - 570.5px);
 }
 .header {
   display: flex;
@@ -44,7 +44,7 @@ a {
   line-height: 32px;
   text-transform: uppercase;
 }
-.logo-link span {
+.D-letter {
   font-size: 27px;
   font-weight: 900;
   color: #f16d7f;
@@ -92,13 +92,6 @@ a {
   background-image: -o-linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
   background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
 }
-.header-search .fa-caret-down {
-  padding-left: 8px;
-  font-size: 14px;
-  color: #838383;
-  letter-spacing: 0.03em;
-  line-height: 32px;
-}
 .header-search:hover {
   cursor: pointer;
 }
@@ -134,6 +127,8 @@ a {
   border: 1px solid #e6e6e6;
   border-right-width: 0px;
   padding-left: 26px;
+  padding-right: 26px;
+  font-size: 18px;
 }
 .header-search-button {
   width: 38px;
@@ -151,8 +146,74 @@ a {
   height: 613px;
   background: url(img/slide1.png) no-repeat center -51px;
 }
-.slider__content .slider__text {
+.slider__text {
   width: 510px;
   height: 92px;
+  border-left: #f16d7f solid 12px;
+  padding-left: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.slider__h1 {
+  font-size: 60px;
+  font-weight: 900;
+  color: #222222;
+  letter-spacing: 0.0001em;
+  line-height: 45px;
+}
+.slider__h3 {
+  font-size: 40px;
+  font-weight: 900;
+  color: #222222;
+  letter-spacing: 0.05em;
+  line-height: 55px;
+}
+.slider__h3__span {
+  font-size: 40px;
+  font-weight: 900;
+  color: #f16d7f;
+  letter-spacing: 0.05em;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.promo {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  height: 823px;
+}
+.promo__container {
+  width: 560px;
+  position: relative;
+}
+.promo__container:hover {
+  opacity: 0.9;
+}
+.promo__container:first-child {
+  padding-right: 20px;
+}
+.promo__container__stiker {
+  position: absolute;
+  padding: 18px;
+  top: 26px;
+  left: 1px;
   background-color: #fff;
+}
+.promo__container__stiker p {
+  font-size: 18px;
+  font-weight: 900;
+  color: #222222;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.promo__container__stiker h4 {
+  font-size: 30px;
+  font-weight: 900;
+  color: #f16d7f;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
