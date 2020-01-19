@@ -411,7 +411,8 @@ a {
     }
 }
 .footer {
-
+    height: 349px;
+    display: flex;
 }
 
 .footer__bottom {
@@ -448,4 +449,41 @@ a {
     color: #7a7a7a;
     letter-spacing: 0.03em;
     line-height: 42px;
+}
+
+.footer__about-us {
+    width: 431px;
+    &__logo{
+        margin-bottom: 29px;
+    }
+    p {
+        height: 200px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #898989;
+        letter-spacing: 0.03em;
+        overflow: hidden;
+        text-overflow: clip;
+        line-height: 24px;
+    }
+}
+
+.footer__menu {
+    padding-top: 14px;
+    display: flex;
+    justify-content: space-around;
+    &__ul {
+        font-size: 18px;
+        font-weight: bold;
+        color: #f16d7f;
+        letter-spacing: 0.03em;
+        line-height: 26px;
+    }
+    &__li {
+        font-size: 16px;
+        color: #898989;
+        letter-spacing: 0.03em;
+        line-height: 42px;
+        list-style: none;
+    }
 }
