@@ -195,21 +195,50 @@ a {
   cursor: pointer;
 }
 .top-user-menu {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 38px;
   width: 130px;
   background-color: #f16d7f;
-  font-family: 'Lato';
   font-size: 15px;
   color: #ffffff;
-  text-align: right;
   letter-spacing: 0.03em;
   line-height: 32px;
 }
+.top-user-menu::-webkit-details-marker {
+  display: none;
+}
+.top-user-menu:focus {
+  outline: none;
+}
 .top-user-menu i {
   padding-left: 8px;
+}
+.top-user-menu__ul {
+  list-style: none;
+  position: absolute;
+}
+.top-user-menu__li {
+  height: 38px;
+  width: 130px;
+  background-color: #f16d7f;
+  font-size: 15px;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  text-align: center;
+  border-top: solid 1px #fff;
+}
+.top-user-menu__li:hover {
+  opacity: 0.9;
+}
+.top-user-menu__link {
+  color: #fff;
+}
+.top-user-menu__link:visited {
+  color: #fff;
 }
 .cart {
   display: flex;

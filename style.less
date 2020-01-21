@@ -214,20 +214,49 @@ a {
 }
 
 .top-user-menu {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 38px;
     width: 130px;
     background-color: #f16d7f;
-    font-family: 'Lato';
     font-size: 15px;
     color: #ffffff;
-    text-align: right;
     letter-spacing: 0.03em;
     line-height: 32px;
+    &::-webkit-details-marker {
+        display: none
+    }
+    &:focus{
+        outline: none;
+    }
     i {
         padding-left: 8px;
+    }
+    &__ul{
+        list-style: none;
+        position: absolute;
+    }
+    &__li{
+        height: 38px;
+        width: 130px;
+        background-color: #f16d7f;
+        font-size: 15px;
+        color: #ffffff;
+        letter-spacing: 0.03em;
+        line-height: 32px;
+        text-align: center;
+        border-top: solid 1px #fff;
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+    &__link{
+        color: #fff;
+    }
+    &__link:visited{
+        color: #fff;
     }
 }
 
