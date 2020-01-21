@@ -92,6 +92,7 @@ a {
   width: 100%;
 }
 .cart__box__item__title {
+  display: inline-block;
   font-size: 12px;
   font-weight: bold;
   color: #222222;
