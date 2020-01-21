@@ -237,6 +237,9 @@ a {
   margin: 0px 16px;
   font-weight: 700;
 }
+.header-search__link {
+  color: #4f4f4f;
+}
 .header-search__link:visited {
   color: #4f4f4f;
 }
