@@ -19,7 +19,7 @@
             <a href="/index.html" class="logo-link"><img src="img/logo.png" alt="logo" class="logo-img">BRAN<span class="D-letter">D</span></a>
             <div class="search-form">
                 <form class="search-form">
-                    <ul class="header-search">Browse&nbsp;&#9207</ul>
+                    <ul class="header-search">Browse&nbsp;<i class="fas fa-caret-down"></i></ul>
                     <input type="text" placeholder="Search for Item..." class="header-search-str" id="search">
                     <button class="header-search-button"><i class="fas fa-search"></i></button>
                 </form>
@@ -28,9 +28,34 @@
         </div>
         <div class="header__right">
                 <div class="cart">
-                    <img src="img/cart.png" alt="cart" class="cart-img">
+                    <a href="#" class="cart__link"><img src="img/cart.png" alt="cart" class="cart__img"></a>
+                    <div class="cart__box">
+                        <div class="cart__box__item">
+                            <img src="img/cart_img1.png" alt="" class="cart__box__item__img">
+                            <div class="cart__box__item__text">
+                                <p class="cart__box__item__title">Rebox Zane</p>
+                                <p class="cart__box__item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></p>
+                                <p class="cart__box__item__price">1 <span>x</span> $250</p>
+                            </div>
+                            <i class="fas fa-times-circle cart__box__item__ctrl"></i>
+                        </div>
+                        <div class="cart__box__item">
+                            <img src="img/cart_img2.png" alt="" class="cart__box__item__img">
+                            <div class="cart__box__item__text">
+                                <p class="cart__box__item__title">Rebox Zane</p>
+                                <p class="cart__box__item__rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></p>
+                                <p class="cart__box__item__price">1 <span>x</span> $250</p>
+                            </div>
+                            <i class="fas fa-times-circle cart__box__item__ctrl"></i>
+                        </div>
+                        <div class="cart__box__total">
+                            <p class="cart__box__total__text">Total</p><p class="cart__box__total__amount">$500.00</p>
+                        </div>
+                        <a href="" class="cart__box__link">Checkout</a>
+                        <a href="" class="cart__box__link">Go&nbsp;to&nbsp;cart</a>
+                    </div>
                 </div>
-                <ul class="header-user-menu"><a href="#" class="top-user-menu">My Account &#9207</a></ul>
+                <ul class="header-user-menu"><a href="#" class="top-user-menu">My Account<i class="fas fa-caret-down"></i></a></ul>
         </div>
     </section>
     <nav class="nav center">
@@ -222,21 +247,24 @@
             <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.<br><br>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
         </div>
         <div class="footer__menu">
-            <ul class="footer__menu__ul">Company
+            <ul>
+                <h3 class="footer__menu__h3">Company</h3>
                 <li class="footer__menu__li"><a href="#" class="footer__menu__li__link" >Home</a></li>
                 <li class="footer__menu__li"><a href="#" class="footer__menu__li__link" >Shop</a></li>
                 <li class="footer__menu__li"><a href="#" class="footer__menu__li__link" >About</a></li>
                 <li class="footer__menu__li"><a href="#" class="footer__menu__li__link" >How It Works</a></li>
                 <li class="footer__menu__li"><a href="#" class="footer__menu__li__link" >Contact</a></li>
              </ul>
-             <ul class="footer__menu__ul">Information
+             <ul>
+                <h3 class="footer__menu__h3">Information</h3>
                 <li class="footer__menu__li"><a href="#" class="footer__menu__li__link" >Tearms & Condition</a></li>
                 <li class="footer__menu__li"><a href="#" class="footer__menu__li__link" >Privacy Policy</a></li>
                 <li class="footer__menu__li"><a href="#" class="footer__menu__li__link" >How to Buy</a></li>
                 <li class="footer__menu__li"><a href="#" class="footer__menu__li__link" >How to Sell</a></li>
                 <li class="footer__menu__li"><a href="#" class="footer__menu__li__link" >Promotion</a></li>
              </ul>
-             <ul class="footer__menu__ul">SHOP CATEGORY
+             <ul>
+                <h3 class="footer__menu__h3">SHOP CATEGORY</h3>
                 <li class="footer__menu__li"><a href="#" class="footer__menu__li__link" >Men</a></li>
                 <li class="footer__menu__li"><a href="#" class="footer__menu__li__link" >Women</a></li>
                 <li class="footer__menu__li"><a href="#" class="footer__menu__li__link" >Child</a></li>

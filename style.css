@@ -54,8 +54,100 @@ a {
   line-height: 32px;
   text-transform: uppercase;
 }
-.cart-img {
+.cart {
+  position: relative;
+}
+.cart:hover .cart__box {
+  opacity: 1;
+  visibility: visible;
+}
+.cart__img {
   margin-right: 26px;
+}
+.cart__box {
+  visibility: hidden;
+  opacity: 0;
+  transition-property: opacity, visibility;
+  transition-duration: 0.2s;
+  transition-delay: 0.15s;
+  position: absolute;
+  width: 224px;
+  top: 116%;
+  left: -22px;
+  padding: 19px;
+  background-color: #fff;
+}
+.cart__box:hover {
+  display: block;
+}
+.cart__box__item {
+  display: flex;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eaeaea;
+}
+.cart__box__item__text {
+  display: inline-block;
+  margin-left: 14px;
+  width: 100%;
+}
+.cart__box__item__title {
+  font-size: 12px;
+  font-weight: bold;
+  color: #222222;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.cart__box__item__rating {
+  font-size: 12px;
+  color: #e4af48;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.cart__box__item__price {
+  font-size: 12px;
+  color: #f16d7f;
+  text-transform: uppercase;
+  padding-top: 12px;
+}
+.cart__box__item__price span {
+  font-size: 10px;
+}
+.cart__box__item__ctrl {
+  font-size: 16px;
+  color: #c0c0c0;
+  text-transform: uppercase;
+  align-self: center;
+}
+.cart__box__total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 21px;
+}
+.cart__box__total__text {
+  font-size: 16px;
+  display: inline;
+  font-weight: bold;
+  color: #222222;
+  text-transform: uppercase;
+}
+.cart__box__total__amount {
+  display: inline;
+  text-align: right;
+}
+.cart__box__link {
+  display: block;
+  padding: 19px 72px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  outline: 1px solid #eaeaea;
+  margin-top: 11px;
+}
+.cart__box__link:hover {
+  color: #f16d7f;
+  outline: 1px #f16d7f solid;
 }
 .logo-img {
   margin-right: 13px;
@@ -440,7 +532,7 @@ a {
   display: flex;
   justify-content: space-around;
 }
-.footer__menu__ul {
+.footer__menu__h3 {
   font-size: 18px;
   font-weight: bold;
   color: #f16d7f;

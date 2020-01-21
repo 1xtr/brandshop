@@ -65,8 +65,103 @@ a {
     text-transform: uppercase;
 }
 
-.cart-img {
-    margin-right: 26px;
+.cart {
+    position: relative;
+    &:hover .cart__box {
+        opacity: 1;
+        visibility: visible;
+    }
+    &__img {
+        margin-right: 26px;
+    }
+    &__box{
+        visibility: hidden;
+        opacity: 0;
+        transition-property: opacity, visibility;
+        transition-duration: 0.2s;
+        transition-delay: 0.15s;
+        position: absolute;
+        width: 224px;
+        top: 100% + 16px;
+        left: -22px;
+        padding: 19px;
+        background-color: #fff;
+        &:hover{
+            display: block;
+        }
+        &__item{
+            display: flex;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #eaeaea;
+            &__text{
+                display: inline-block;
+                margin-left: 14px;
+                width: 100%;
+            }
+            &__title{
+                font-size: 12px;
+                font-weight: bold;
+                color: #222222;
+                text-transform: uppercase;
+                padding-top: 10px;
+            }
+            &__rating{
+                font-size: 12px;
+                color: #e4af48;
+                text-transform: uppercase;
+                padding-top: 10px;
+            }
+            &__price{
+                font-size: 12px;
+                color: #f16d7f;
+                text-transform: uppercase;
+                padding-top: 12px;
+                & span{
+                    font-size: 10px;
+                }
+            }
+            &__ctrl{
+                font-size: 16px;
+                color: #c0c0c0;
+                text-transform: uppercase;
+                align-self: center;
+                
+                
+            }
+        }
+        &__total{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 21px;
+            &__text{
+                font-size: 16px;
+                display: inline;
+                font-weight: bold;
+                color: #222222;
+                text-transform: uppercase;
+            }
+            &__amount{
+                display: inline;
+                text-align: right;
+            }
+        }
+        &__link{
+            display: block;
+            padding: 19px 72px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #4a4a4a;
+            text-transform: uppercase;
+            outline: 1px solid #eaeaea;
+            margin-top: 11px;
+            &:hover{
+                color: #f16d7f;
+                outline: 1px #f16d7f solid;
+            }
+        }
+        
+    }
 }
 
 .logo-img {
@@ -505,7 +600,7 @@ a {
     padding-top: 14px;
     display: flex;
     justify-content: space-around;
-    &__ul {
+    &__h3 {
         font-size: 18px;
         font-weight: bold;
         color: #f16d7f;
