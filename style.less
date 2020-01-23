@@ -863,6 +863,7 @@ details summary::after{
         text-align: center;
         line-height: 20px;
         text-transform: uppercase;
+        padding-left: 9px;
     }
     &__path__link{
         font-size: 14px;
@@ -914,4 +915,45 @@ details summary::after{
         }
     }
     
+}
+
+.main {
+    margin: 59px 0px 110px;
+    display: flex;
+    &__sidebar{
+        margin-right: 50px;
+        &__menu{
+
+            &__ttl{
+                width: 243px;
+                display: flex;
+                justify-content: space-between;
+                font-size: 14px;
+                font-weight: bold;
+                color: #ef5b70;
+                text-align: left;
+                line-height: 20px;
+                text-transform: uppercase;
+                border-left: 5px solid #f16d7f;
+                border-bottom: 1px solid #ebebeb;
+                padding: 12px 5px 15px 11px;
+                &:focus{
+                    outline: none;
+                }
+            }
+            &__li{
+                list-style: none;
+                padding-left: 17px;
+            }
+            &__link{
+                font-size: 14px;
+                color: #6f6e6e;
+                text-align: left;
+                line-height: 33px;
+                &:hover{
+                    color: #f16d7f;
+                }
+            }
+        }
+    }
 }

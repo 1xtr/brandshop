@@ -768,6 +768,7 @@ details summary::after {
   text-align: center;
   line-height: 20px;
   text-transform: uppercase;
+  padding-left: 9px;
 }
 .breadcrumb__path__link {
   font-size: 14px;
@@ -816,4 +817,41 @@ details summary::after {
   letter-spacing: 0.03em;
   line-height: 24px;
   text-align: center;
+}
+.main {
+  margin: 59px 0px 110px;
+  display: flex;
+}
+.main__sidebar {
+  margin-right: 50px;
+}
+.main__sidebar__menu__ttl {
+  width: 243px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ef5b70;
+  text-align: left;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-left: 5px solid #f16d7f;
+  border-bottom: 1px solid #ebebeb;
+  padding: 12px 5px 15px 11px;
+}
+.main__sidebar__menu__ttl:focus {
+  outline: none;
+}
+.main__sidebar__menu__li {
+  list-style: none;
+  padding-left: 17px;
+}
+.main__sidebar__menu__link {
+  font-size: 14px;
+  color: #6f6e6e;
+  text-align: left;
+  line-height: 33px;
+}
+.main__sidebar__menu__link:hover {
+  color: #f16d7f;
 }
