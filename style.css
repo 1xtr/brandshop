@@ -175,9 +175,6 @@ a {
 .nav-list {
   position: relative;
 }
-.nav-list:hover {
-  border-bottom: 3px solid #ef5b70;
-}
 .nav-list:hover .nav-menu__open {
   display: flex;
 }
@@ -190,6 +187,11 @@ a {
   line-height: 26px;
   text-transform: uppercase;
   padding: 20px;
+}
+.nav-list-link__hr {
+  background-color: #ef5b70;
+  height: 3px;
+  border: none;
 }
 .header-search {
   position: relative;
