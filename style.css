@@ -632,6 +632,7 @@ details summary::after {
   letter-spacing: 0.03em;
   line-height: 26px;
   text-transform: uppercase;
+  margin-bottom: 24px;
 }
 .footer__menu__li {
   display: block;
@@ -838,6 +839,7 @@ details summary::after {
   border-left: 5px solid #f16d7f;
   border-bottom: 1px solid #ebebeb;
   padding: 12px 5px 15px 11px;
+  margin-bottom: 18px;
 }
 .main__sidebar__menu__ttl:focus {
   outline: none;
@@ -854,4 +856,11 @@ details summary::after {
 }
 .main__sidebar__menu__link:hover {
   color: #f16d7f;
+}
+.main__content {
+  width: 100%;
+}
+.main__content__products__box {
+  display: flex;
+  justify-content: space-between;
 }
