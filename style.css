@@ -175,6 +175,9 @@ a {
 .nav-list {
   position: relative;
 }
+.nav-list:hover {
+  border-bottom: 3px solid #ef5b70;
+}
 .nav-list:hover .nav-menu__open {
   display: flex;
 }
@@ -756,4 +759,34 @@ details summary::after {
 }
 .subscribe__box__form__button:hover {
   opacity: 0.9;
+}
+.breadcrumb {
+  height: 148px;
+  background-color: #f8f3f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.breadcrumb__title {
+  font-size: 24px;
+  font-weight: 900;
+  color: #f16d7f;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.breadcrumb__path__link {
+  font-size: 14px;
+  font-weight: 300;
+  color: #636363;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.breadcrumb__path__link:hover {
+  color: #f16d7f;
+}
+.breadcrumb__path__link__current {
+  color: #f16d7f;
+  font-weight: bold;
 }

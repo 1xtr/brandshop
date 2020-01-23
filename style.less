@@ -193,6 +193,9 @@ a {
 
 .nav-list {
     position: relative;
+    &:hover{
+        border-bottom: 3px solid #ef5b70;
+    }
     &:hover .nav-menu__open {
         display: flex;
     }
@@ -846,6 +849,39 @@ details summary::after{
             &:hover{
                 opacity: 0.9;
             }
+        }
+    }
+}
+
+// product.html
+
+.breadcrumb {
+    height: 148px;
+    background-color: #f8f3f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title{
+        font-size: 24px;
+        font-weight: 900;
+        color: #f16d7f;
+        text-align: center;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+    &__path__link{
+        font-size: 14px;
+        font-weight: 300;
+        color: #636363;
+        text-align: center;
+        line-height: 20px;
+        text-transform: uppercase;
+        &:hover{
+            color: #f16d7f;
+        }
+        &__current{
+            color: #f16d7f;
+            font-weight: bold;
         }
     }
 }
