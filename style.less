@@ -725,8 +725,8 @@ details summary::after{
             letter-spacing: 0.03em;
             line-height: 42px;
         }
-        &__link:visited{
-            color: #898989;
+        &__link:hover{
+            color: #f16d7f;
         }
     }
 }
@@ -736,9 +736,6 @@ details summary::after{
     height: 438px;
     margin-bottom: 109px;
     display: flex;
-    &:hover {
-        background: url(img/subscribe_bg.png) no-repeat center;
-    }
 }
 
 
@@ -807,12 +804,12 @@ details summary::after{
 
         &__email{
             height: 46px;
-            width: 192px;
+            width: 164px;
             background-color: #e1e1e1;
             border-radius: 23px 0px 0px 23px;
             display: inline-block;
             border: none;
-            padding-left: 28px;
+            padding: 0px 28px;
             // padding-right: 28px;
             font-size: 14px;
             color: #222224;
@@ -884,4 +881,39 @@ details summary::after{
             font-weight: bold;
         }
     }
+}
+
+.feature-box{
+    width: 1600px;
+    height: 341px;
+    background-color: #222224;
+    margin: 0 calc(50% - 800px);
+    display: flex;
+    justify-content: center;
+     &__row{
+        width: 333px;
+        padding: 89px 63px 0px 63px;
+        text-align: center;
+        &__img{
+            padding-bottom: 5px;
+            height: 40px;
+        }
+        &__h3{
+            font-size: 20px;
+            font-weight: bold;
+            color: #fbfbfb;
+            text-align: center;
+            letter-spacing: 0.03em;
+            padding: 17px;
+        }
+        &__p{
+            font-size: 14px;
+            font-weight: 300;
+            color: #fbfbfb;
+            letter-spacing: 0.03em;
+            line-height: 24px;
+            text-align: center;            
+        }
+    }
+    
 }

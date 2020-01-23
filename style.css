@@ -650,17 +650,14 @@ details summary::after {
   letter-spacing: 0.03em;
   line-height: 42px;
 }
-.footer__menu__li__link:visited {
-  color: #898989;
+.footer__menu__li__link:hover {
+  color: #f16d7f;
 }
 .subscribe {
   background: url(img/subscribe_cover.png) no-repeat center, url(img/subscribe_bg.png) no-repeat center;
   height: 438px;
   margin-bottom: 109px;
   display: flex;
-}
-.subscribe:hover {
-  background: url(img/subscribe_bg.png) no-repeat center;
 }
 .quote {
   display: flex;
@@ -727,12 +724,12 @@ details summary::after {
 }
 .subscribe__box__form__email {
   height: 46px;
-  width: 192px;
+  width: 164px;
   background-color: #e1e1e1;
   border-radius: 23px 0px 0px 23px;
   display: inline-block;
   border: none;
-  padding-left: 28px;
+  padding: 0px 28px;
   font-size: 14px;
   color: #222224;
   letter-spacing: 0.03em;
@@ -789,4 +786,37 @@ details summary::after {
 .breadcrumb__path__link__current {
   color: #f16d7f;
   font-weight: bold;
+}
+.feature-box {
+  width: 1600px;
+  height: 341px;
+  background-color: #222224;
+  margin: 0 calc(50% - 800px);
+  display: flex;
+  justify-content: center;
+}
+.feature-box__row {
+  width: 333px;
+  padding: 89px 63px 0px 63px;
+  text-align: center;
+}
+.feature-box__row__img {
+  padding-bottom: 5px;
+  height: 40px;
+}
+.feature-box__row__h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fbfbfb;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 17px;
+}
+.feature-box__row__p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fbfbfb;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  text-align: center;
 }
