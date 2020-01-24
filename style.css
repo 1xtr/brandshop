@@ -941,6 +941,9 @@ details summary::after {
 .main__content__filter__size__input {
   display: none;
 }
+.main__content__filter__size__input[type=checkbox]:checked + .main__content__filter__size__i {
+  background-color: #ef5b70;
+}
 .main__content__filter__size__i {
   display: inline-block;
   width: 13px;
@@ -951,19 +954,6 @@ details summary::after {
 }
 .main__content__filter__size__i:hover {
   border-color: #ef5b70;
-}
-.main__content__filter__size__span {
-  display: flex;
-  align-items: center;
-  font-family: 'OpenSans';
-  font-size: 14px;
-  color: #6f6e6e;
-  line-height: 20px;
-  text-transform: uppercase;
-  margin-right: 23px;
-}
-.main__content__filter__size__input[type=checkbox]:checked + .main__content__filter__size__i {
-  background-color: #ef5b70;
 }
 .main__content__filter__price {
   width: 263px;

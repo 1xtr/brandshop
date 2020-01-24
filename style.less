@@ -1040,6 +1040,9 @@ details summary::after{
                 &__input{
                     display: none;
                 }
+                &__input[type=checkbox]:checked+&__i{
+                    background-color: #ef5b70;
+                }
                 &__i{
                     display: inline-block;
                     width: 13px;
@@ -1051,22 +1054,8 @@ details summary::after{
                         border-color: #ef5b70;
                     }
                 }
-                &__span{
-                    display: flex;
-                    align-items: center;
-                    font-family: 'OpenSans';
-                    font-size: 14px;
-                    color: #6f6e6e;
-                    line-height: 20px;
-                    text-transform: uppercase;
-                    margin-right: 23px;
-                    
-                    
-                    
-                }
-                &__input[type=checkbox]:checked+&__i{
-                    background-color: #ef5b70;
-                }
+                
+                
             }
             &__price{
                 width: 263px;
