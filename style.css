@@ -1034,17 +1034,17 @@ details summary::after {
 .main__content__bottom__pagination__ul {
   height: 27px;
   background-color: #ffffff;
-  margin: 0px 8px;
+  margin: 0px 10px;
 }
 .main__content__bottom__pagination__li {
   list-style: none;
   display: inline-block;
-  vertical-align: middle;
+  text-align: center;
   font-size: 16px;
   font-weight: 300;
   color: #c4c4c4;
   line-height: 26px;
-  padding: 0 7px;
+  min-width: 29px;
 }
 .main__content__bottom__pagination__li__current {
   color: #ef5b70;
