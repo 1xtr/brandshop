@@ -976,6 +976,37 @@ details summary::after{
             display: flex;
             justify-content: space-between;
         }
+        &__sort{
+            display: flex;
+            justify-content: flex-start;
+            background-color: #f3f3f3;
+            height: 30px;
+            width: 100%;
+            margin-bottom: 48px;
+            padding: 10px;
+            &__form{
+                display: flex;
+                justify-content: flex-start;
+                background-color: #fff;
+                margin-right: 10px;
+                & select, & p{
+                    display: flex;
+                    font-size: 14px;
+                    color: #6f6e6e;
+                    line-height: 26px;
+                    border: 1px solid #ebebeb;
+                    padding: 0px 10px;
+                }
+                & select {
+                    margin-left: -1px;
+                    min-width: 63px;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                                
+            }
+        }
         &__products{
             
             &__box{
@@ -983,5 +1014,28 @@ details summary::after{
                 justify-content: space-between;
             }
         }
+        &__bottom{
+            display: flex;
+            justify-content: space-between;
+            &__btn__link{
+                display: flex;
+                height: 44px;
+                width: 150px;
+                font-size: 16px;
+                font-weight: 300;
+                color: #ef5b70;
+                text-align: left;
+                line-height: 26px;
+                background-color: #ffffff;
+                border: 1px solid #ef5b70;
+                border-radius: 3px;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    font-weight: bold;
+                }
+            }
+        }
     }
+    
 }

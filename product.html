@@ -180,7 +180,7 @@
                 Arrivals</a></div>
     </section>
     <section class="main center">
-        <nav class="main__sidebar main__sidebar__fixed">
+        <nav class="main__sidebar">
             <details class="main__sidebar__menu" open>
                 <summary class="main__sidebar__menu__ttl">CATEGORY</summary>
                 <ul>
@@ -233,7 +233,24 @@
                 <div class="main__content__filter__size"></div>
                 <div class="main__content__filter__price"></div>
             </div>
-            <div class="main__content__sort"></div>
+            <div class="main__content__sort">
+                <form class="main__content__sort__form">
+                    <p>Sort By</p>
+                    <select>
+                        <option selected>Name</option>
+                        <option>Price</option>
+                        <option>Availability</option>   
+                    </select>
+                </form>
+                <form class="main__content__sort__form">
+                    <p>Show</p>
+                    <select>
+                        <option selected>09</option>
+                        <option>12</option>
+                        <option>15</option>
+                    </select>
+                </form>
+            </div>
             <div class="main__content__products">
                 <div class="main__content__products__box">
                     <div class="product">
