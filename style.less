@@ -975,6 +975,102 @@ details summary::after{
         &__filter{
             display: flex;
             justify-content: space-between;
+            margin: 12px 0px 41px;
+            &__title{
+                font-size: 14px;
+                font-weight: bold;
+                color: #6f6e6e;
+                line-height: 20px;
+                text-transform: uppercase;
+                margin-bottom: 15px; 
+            }
+            &__trend{
+                width: 178px;
+                &__ul{
+                    display: inline-block;
+                }
+                &__span{
+                    list-style: none;
+                    font-size: 14px;
+                    color: #6f6e6e;
+                    line-height: 26px;
+                    &:hover{
+                        color: #ef5b70;
+                        cursor: pointer;
+                    }
+                    &::after{
+                        content: '|';
+                        font-size: 14px;
+                        color: #dfdfdf;
+                        line-height: 26px;
+                        padding: 0px 5px;                        
+                    }
+                }
+                &__input{
+                    display: none;
+                }
+                &__input[type=checkbox]:checked+&__span {
+                    font-weight: bold;
+                    color: #ef5b70;
+                }
+            }
+            &__size{
+                width: 236px;
+                &__form{
+                    display: flex;
+                    flex-flow: row wrap;
+                }
+                &__label{
+                    display: flex;
+                    align-items: center;
+                    font-family: 'OpenSans';
+                    font-size: 14px;
+                    color: #6f6e6e;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                    margin-right: 23px;
+                    &:nth-child(4){
+                        margin-right: 0px;
+                    }
+                    &:hover{
+                        color: #ef5b70;
+                        cursor: pointer;
+                    }
+                }
+                &__input{
+                    display: none;
+                }
+                &__i{
+                    display: inline-block;
+                    width: 13px;
+                    height: 13px;
+                    background-color: #fff;
+                    border: 1px solid #ebebeb;
+                    margin-right: 9px;
+                    &:hover{
+                        border-color: #ef5b70;
+                    }
+                }
+                &__span{
+                    display: flex;
+                    align-items: center;
+                    font-family: 'OpenSans';
+                    font-size: 14px;
+                    color: #6f6e6e;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                    margin-right: 23px;
+                    
+                    
+                    
+                }
+                &__input[type=checkbox]:checked+&__i{
+                    background-color: #ef5b70;
+                }
+            }
+            &__price{
+                width: 263px;
+            }
         }
         &__sort{
             display: flex;
@@ -989,7 +1085,7 @@ details summary::after{
                 justify-content: flex-start;
                 background-color: #fff;
                 margin-right: 10px;
-                & select, & p{
+                &__select, &__p{
                     display: flex;
                     font-size: 14px;
                     color: #6f6e6e;
@@ -997,7 +1093,7 @@ details summary::after{
                     border: 1px solid #ebebeb;
                     padding: 0px 10px;
                 }
-                & select {
+                &__select {
                     margin-left: -1px;
                     min-width: 63px;
                     &:focus{
