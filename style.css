@@ -1025,9 +1025,38 @@ details summary::after {
   display: flex;
   justify-content: space-between;
 }
+.main__content__bottom__pagination {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+}
+.main__content__bottom__pagination__ul {
+  height: 27px;
+  background-color: #ffffff;
+  margin: 0px 8px;
+}
+.main__content__bottom__pagination__li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 300;
+  color: #c4c4c4;
+  line-height: 26px;
+  padding: 0 7px;
+}
+.main__content__bottom__pagination__li__current {
+  color: #ef5b70;
+}
+.main__content__bottom__pagination__li:hover {
+  cursor: pointer;
+  color: #ef5b70;
+  font-weight: bold;
+}
 .main__content__bottom__btn__link {
   display: flex;
-  height: 44px;
+  height: 42px;
   width: 150px;
   font-size: 16px;
   font-weight: 300;

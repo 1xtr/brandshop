@@ -1131,9 +1131,40 @@ details summary::after{
         &__bottom{
             display: flex;
             justify-content: space-between;
+            &__pagination{
+                display: flex;
+                align-items: center;
+                border: 1px solid #ebebeb;
+                border-radius: 3px;
+                
+                &__ul{
+                    height: 27px;
+                    background-color: #ffffff;
+                    margin: 0px 8px;
+                }
+                &__li{
+                    list-style: none;
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: #c4c4c4;
+                    line-height: 26px;
+                    padding: 0 7px;
+                    
+                    &__current{
+                        color: #ef5b70;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        color: #ef5b70;
+                        font-weight: bold;
+                    }
+                }
+            }
             &__btn__link{
                 display: flex;
-                height: 44px;
+                height: 42px;
                 width: 150px;
                 font-size: 16px;
                 font-weight: 300;
