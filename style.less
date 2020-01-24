@@ -926,6 +926,12 @@ details summary::after{
     display: flex;
     &__sidebar{
         margin-right: 50px;
+        &__fixed{
+            position: fixed;
+            top: 0px;
+            background-color: #fff;
+            z-index: 999;
+        }
         &__menu{
 
             &__ttl{
@@ -963,11 +969,15 @@ details summary::after{
     }
     &__content{
         width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
         &__filter{
-
+            display: flex;
+            justify-content: space-between;
         }
         &__products{
-
+            
             &__box{
                 display: flex;
                 justify-content: space-between;

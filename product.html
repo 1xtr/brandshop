@@ -180,7 +180,7 @@
                 Arrivals</a></div>
     </section>
     <section class="main center">
-        <nav class="main__sidebar">
+        <nav class="main__sidebar main__sidebar__fixed">
             <details class="main__sidebar__menu" open>
                 <summary class="main__sidebar__menu__ttl">CATEGORY</summary>
                 <ul>
@@ -227,8 +227,13 @@
             </details>
             
         </nav>
-        <div class="main__content">
-            <div class="main__content__filter"></div>
+        <article class="main__content">
+            <div class="main__content__filter">
+                <div class="main__content__filter__trend"></div>
+                <div class="main__content__filter__size"></div>
+                <div class="main__content__filter__price"></div>
+            </div>
+            <div class="main__content__sort"></div>
             <div class="main__content__products">
                 <div class="main__content__products__box">
                     <div class="product">
@@ -318,8 +323,11 @@
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
+            <div class="main__content__bottom">
+                <div class="main__content__bottom__pagination"></div>
+                <div class="main__content__bottom__btn"><a href="#" class="main__content__bottom__btn__link">View All</a></div>
+            </div>
+        </article>
     </section>
     <section class="feature-box">
         <div class="feature-box__row">

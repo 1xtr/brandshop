@@ -828,6 +828,12 @@ details summary::after {
 .main__sidebar {
   margin-right: 50px;
 }
+.main__sidebar__fixed {
+  position: fixed;
+  top: 0px;
+  background-color: #fff;
+  z-index: 999;
+}
 .main__sidebar__menu__ttl {
   width: 243px;
   display: flex;
@@ -861,6 +867,13 @@ details summary::after {
 }
 .main__content {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+.main__content__filter {
+  display: flex;
+  justify-content: space-between;
 }
 .main__content__products__box {
   display: flex;
