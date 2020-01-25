@@ -1176,4 +1176,53 @@ details summary::after
 
 .shopping-cart
     margin-top: 90px
-    
+    &__tbl
+        width: 100%
+        border-collapse: collapse
+        &__tr
+            padding-top: 20px
+        &__ttl
+            font-size: 13px
+            font-weight: bold
+            color: #222222
+            text-align: center
+            letter-spacing: -0.01em
+            line-height: 20px
+            text-transform: uppercase
+            border-bottom: 1px solid #eaeaea
+            padding-bottom: 20px
+            &:first-child
+                text-align: left
+        &__td
+            text-align: center
+            font-size: 13px
+            color: #656565
+            line-height: 20px
+            &__input
+                text-align: center
+                height: 30px
+                width: 54px
+                background-color: #ffffff
+                border: 1px solid #eaeaea
+            &__img
+                height: 115px
+                width: 100px
+                padding-top: 22px
+                padding-bottom: 25px
+
+    &__buttons
+        display: flex
+        justify-content: space-between
+        margin-bottom: 60px
+        &__link
+            display: block
+            padding: 20px 39px
+            font-size: 14px
+            font-weight: bold
+            color: #4a4a4a
+            text-align: center
+            text-transform: uppercase
+            background-color: #ffffff
+            outline: 1px solid #eaeaea
+            &:hover
+                color: $siteColor2
