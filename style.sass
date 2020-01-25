@@ -1,3 +1,5 @@
+@import "vars"
+
 * 
     margin: 0
     padding: 0
@@ -745,7 +747,7 @@ details summary::after
 
 .quote 
     display: flex
-    padding-top: 111px
+    padding-top: 110px
     width: 50%
     border-right: 1px solid #e3e3e3
     &__foto
@@ -759,18 +761,18 @@ details summary::after
             color: #222224
             text-align: left
             letter-spacing: 0.03em
-            line-height: 26px
+            line-height: 24px
             margin-top: 12px
             margin-bottom: 19px
-        
+            font-weight: 700
         &__author
             font-size: 16px
             font-weight: bold
             color: #f16d7f
             text-align: left
             letter-spacing: 0.03em
-            line-height: 26px
-        
+            line-height: 16px
+            font-weight: bold 
         &__city
             font-size: 12px
             font-weight: 300
@@ -778,9 +780,19 @@ details summary::after
             text-align: left
             letter-spacing: 0.03em
             line-height: 14px
-        
-    
-
+            font-weight: bold
+    &__pagination
+        margin-top: 40px
+        &__link
+            display: inline-block
+            height: 4px
+            width: 38px
+            background-color: #d6d6d6
+            margin-right: 13px
+            &__current
+                background-color: $siteColor1
+            &:hover
+                background-color: $siteColor1
 
 .subscribe__box
     margin-left: 92px
@@ -884,9 +896,6 @@ details summary::after
         &__current
             color: #f16d7f
             font-weight: bold
-        
-    
-
 
 .feature-box
     width: 1600px

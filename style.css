@@ -917,7 +917,7 @@ details summary::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 111px;
+  padding-top: 110px;
   width: 50%;
   border-right: 1px solid #e3e3e3;
 }
@@ -936,9 +936,10 @@ details summary::after {
   color: #222224;
   text-align: left;
   letter-spacing: 0.03em;
-  line-height: 26px;
+  line-height: 24px;
   margin-top: 12px;
   margin-bottom: 19px;
+  font-weight: 700;
 }
 
 .quote__box__author {
@@ -947,7 +948,8 @@ details summary::after {
   color: #f16d7f;
   text-align: left;
   letter-spacing: 0.03em;
-  line-height: 26px;
+  line-height: 16px;
+  font-weight: bold;
 }
 
 .quote__box__city {
@@ -957,6 +959,27 @@ details summary::after {
   text-align: left;
   letter-spacing: 0.03em;
   line-height: 14px;
+  font-weight: bold;
+}
+
+.quote__pagination {
+  margin-top: 40px;
+}
+
+.quote__pagination__link {
+  display: inline-block;
+  height: 4px;
+  width: 38px;
+  background-color: #d6d6d6;
+  margin-right: 13px;
+}
+
+.quote__pagination__link__current {
+  background-color: #f16d7f;
+}
+
+.quote__pagination__link:hover {
+  background-color: #f16d7f;
 }
 
 .subscribe__box {
@@ -1475,4 +1498,4 @@ details summary::after {
 .main__content__bottom__btn__link:hover {
   font-weight: bold;
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */
