@@ -1179,6 +1179,31 @@ details summary::after
     &__tbl
         width: 100%
         border-collapse: collapse
+        &__item
+            &__ttl
+                font-size: 13px
+                color: #222222
+                text-transform: uppercase
+                padding: 10px 0
+                font-weight: bold
+                &:hover
+                    color: $siteColor2
+            &__rating
+                font-size: 13px
+                color: #e4af48
+                padding-bottom: 10px
+                visibility: hidden
+            &__img
+                height: 100%
+                width: 100%
+                display: block
+                object-fit: cover
+            &__color, &__size
+                font-size: 13px
+                font-weight: 300
+                color: #6f6e6e
+                line-height: 20px
+                padding-left: 5px
         &__tr
             padding-top: 20px
         &__ttl
@@ -1198,21 +1223,32 @@ details summary::after
             font-size: 13px
             color: #656565
             line-height: 20px
+            padding-top: 22px
+            padding-bottom: 25px
+            border-bottom: 1px solid #eaeaea
+            &__item
+                text-align: left
+                padding-left: 20px
+                vertical-align: top
+            &__img
+                height: 115px
+                width: 100px
+                
+                
+            &__action
+                color: #656565
             &__input
                 text-align: center
                 height: 30px
                 width: 54px
                 background-color: #ffffff
                 border: 1px solid #eaeaea
-            &__img
-                height: 115px
-                width: 100px
-                padding-top: 22px
-                padding-bottom: 25px
+            
 
     &__buttons
         display: flex
         justify-content: space-between
+        margin-top: 44px
         margin-bottom: 60px
         &__link
             display: block
@@ -1226,3 +1262,4 @@ details summary::after
             outline: 1px solid #eaeaea
             &:hover
                 color: $siteColor2
+                outline-color: $siteColor2
