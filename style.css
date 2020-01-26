@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -1662,12 +1663,20 @@ details summary::after {
   margin-top: 23px;
 }
 
+.shopping-cart__bottom__button:active {
+  -webkit-box-shadow: 0px 0px 10px 2px #f16d7f80;
+          box-shadow: 0px 0px 10px 2px #f16d7f80;
+}
+
 .shopping-cart__bottom__box {
   width: 360px;
 }
 
 .shopping-cart__bottom__box__checkout {
   background-color: #f5f3f3;
+  height: 128px;
+  padding: 43px;
+  width: 274px;
 }
 
 .shopping-cart__bottom__title {
@@ -1682,7 +1691,7 @@ details summary::after {
   font-family: 'Lato';
   font-size: 13px;
   font-weight: 300;
-  color: #b1b1b1;
+  color: #ссс;
   text-align: left;
   display: block;
   padding: 16px 18px;
@@ -1698,5 +1707,62 @@ details summary::after {
 
 .shopping-cart__bottom__select {
   width: 100%;
+}
+
+.shopping-cart__bottom__checkout__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  width: 100%;
+  background-color: #f16d7f;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.shopping-cart__bottom__checkout__button:active {
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.shopping-cart__bottom__checkout__hr {
+  height: 1px;
+  width: 100%;
+  background-color: #e2e2e2;
+  margin-bottom: 17px;
+}
+
+.shopping-cart__bottom__checkout__total {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222222;
+  text-align: right;
+  text-transform: uppercase;
+  padding-bottom: 22px;
+}
+
+.shopping-cart__bottom__checkout__total__amount {
+  color: #f16d7f;
+  margin-left: 20px;
+}
+
+.shopping-cart__bottom__checkout__subtotal {
+  font-size: 11px;
+  color: #4a4a4a;
+  text-align: right;
+  text-transform: uppercase;
+  padding-bottom: 14px;
+}
+
+.shopping-cart__bottom__checkout__subtotal__amount {
+  margin-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */
