@@ -1533,6 +1533,11 @@ details summary::after {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0.9;
+}
+
+.shopping-cart__tbl__item__img:hover {
+  opacity: 1;
 }
 
 .shopping-cart__tbl__item__color, .shopping-cart__tbl__item__size {
