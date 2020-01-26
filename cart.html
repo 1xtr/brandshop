@@ -235,9 +235,29 @@
             <a href="#" class="shopping-cart__buttons__link">CLEAR SHOPPING CART</a><a href="#" class="shopping-cart__buttons__link">CONTINUE SHOPPING</a>
         </div>
         <div class="shopping-cart__bottom">
-            <div class="shopping-cart__bottom__ship_addr"></div>
-            <div class="shopping-cart__bottom__coupons"></div>
-            <div class="shopping-cart__bottom__chekout"></div>
+            <div class="shopping-cart__bottom__box">
+                <p class="shopping-cart__bottom__title">Shipping Adress</p>
+                <select class="shopping-cart__bottom__select">
+                    <option>Spain</option>
+                    <option>Russia</option>
+                    <option>Unaited States</option>
+                </select>
+                <input type="text" class="shopping-cart__bottom__input" placeholder="State">
+                <input type="number" placeholder="Postcode / Zip" maxlength="7" max="9999999" class="shopping-cart__bottom__input">
+                <input type="button" value="Get a quote" class="shopping-cart__bottom__button">
+            </div>
+            <div class="shopping-cart__bottom__box">
+                <p class="shopping-cart__bottom__title">coupon discount</p>
+                <span class="shopping-cart__bottom__note">Enter your coupon code if you have one</span>
+                <input type="text" class="shopping-cart__bottom__input" placeholder="Promo code">
+                <input type="button" value="Apply coupon" class="shopping-cart__bottom__button">
+            </div>
+            <div class="shopping-cart__bottom__box shopping-cart__bottom__box__checkout">
+                <p class="shopping-cart__bottom__chekout__subtotal">Sub total<span class="shopping-cart__bottom__chekout__subtotal__amount">$900</span></p>
+                <p class="shopping-cart__bottom__chekout__total"><span class="shopping-cart__bottom__chekout__total__amount">$900</span></p>
+                <div class="shopping-cart__bottom__chekout__hr"></div>
+                <input type="button" value="Get a quote" class="shopping-cart__bottom__chekout__button">
+            </div>
         </div>
     </section>
     <section class="subscribe center">
