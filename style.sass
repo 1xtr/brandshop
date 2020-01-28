@@ -1303,7 +1303,7 @@ details summary::after
         &__select, &__input
             font-size: 13px
             font-weight: 300
-            color: #cccccc
+            color: #000
             text-align: left
             display: block
             padding: 16px 18px
@@ -1313,6 +1313,8 @@ details summary::after
         &__input
             width: 324px
             margin-top: 20px
+            &::-webkit-inner-spin-button
+                display: none
             
         &__select
             width: 100%
