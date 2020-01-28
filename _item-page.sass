@@ -15,7 +15,7 @@
         position: absolute
         top: 50%
         width: 100%
-        z-index: 999
+        z-index: 10
         &__link
             height: 47px
             width: 47px
@@ -110,11 +110,48 @@
         margin-bottom: 63px
     &__more
         width: 538px
+        margin-bottom: 28px
         display: flex
         justify-content: space-between
-        margin-bottom: 28px
+        &__cont
+            width: 144px
+
+        &__color, &__size, &__quantity
+            display: block
+            width: 100%
+            height: 35px
+            margin-top: 16px
+            background-color: #ffffff
+            border: 1px solid #eaeaea
+            padding: 0 16px
+            font-size: 13px
+            color: #bcbcbc
+            line-height: 24px
+            &:focus
+                outline: none
+        &__quantity
+            width: 112px
+            &::-webkit-inner-spin-button
+                display: none
 
 
+
+
+    &__AddToCart-link
+        display: flex
+        justify-content: center
+        align-items: center
+        outline: 1px solid $siteColor2
+        background-color: #fff
+        margin-bottom: 122px
+        padding: 16px 0
+        width: 538px
+        color: $siteColor2
+        font-size: 16px
+        font-weight: bold
+        &:hover
+            background-color: $siteColor2
+            color: white
 
 .like-also
     margin-top: 40px
