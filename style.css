@@ -1083,11 +1083,11 @@ details summary::after {
   padding: 89px 63px 0 63px;
   text-align: center;
 }
-.feature-box__img {
+.feature-box__row__img {
   padding-bottom: 5px;
   height: 40px;
 }
-.feature-box__h3 {
+.feature-box__row__h3 {
   font-size: 20px;
   font-weight: bold;
   color: #fbfbfb;
@@ -1095,7 +1095,7 @@ details summary::after {
   letter-spacing: 0.03em;
   padding: 17px;
 }
-.feature-box__p {
+.feature-box__row__p {
   font-size: 14px;
   font-weight: 300;
   color: #fbfbfb;
