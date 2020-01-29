@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@-moz-document url-prefix() {
+  summary {
+    display: block;
+  }
+}
 .item-slide {
   padding: 11px 0 42px;
   position: relative;
@@ -224,6 +229,12 @@ a {
   border: 1px solid #ececec;
   box-shadow: 0 0 10px 0 #ececec;
 }
+.header__right__details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 .header__left {
   display: flex;
@@ -238,6 +249,12 @@ a {
 .search-form {
   display: flex;
   justify-content: flex-start;
+}
+.search-form__details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .logo-link {
@@ -411,10 +428,11 @@ a {
 }
 
 .header-search {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  text-align: center;
   height: 38px;
   width: 87px;
   font-size: 14px;
@@ -436,6 +454,7 @@ a {
   border-radius: 5px;
   padding: 15px 0;
   z-index: 1;
+  text-align: left;
 }
 .header-search__li {
   list-style: none;
@@ -472,25 +491,27 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+details:focus, details[open]:focus, summary:focus {
+  outline: none;
+}
+
 details[open] summary::after {
-  font-family: FontAwesome, serif;
-  content: "";
+  content: "▼";
   margin-left: 8px;
   width: 10px;
 }
 
 details summary::after {
-  font-family: FontAwesome, serif;
-  content: "";
+  content: "◀";
   margin-left: 8px;
   width: 10px;
 }
 
 .top-user-menu {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   height: 38px;
   width: 130px;
   background-color: #f16d7f;
@@ -498,6 +519,9 @@ details summary::after {
   color: #ffffff;
   letter-spacing: 0.03em;
   line-height: 32px;
+}
+.top-user-menu:hover {
+  cursor: pointer;
 }
 .top-user-menu:focus {
   outline: none;
