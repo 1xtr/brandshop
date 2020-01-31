@@ -184,20 +184,22 @@
         <div class="checkout-drop">
             <form action="#" name="reg-form" class="checkout-drop__form">
                 <p class="checkout-drop__title">Check as a guest or register</p>
-                <p class="checkout-drop__comments checkout-drop__comments_reg-for-pb">Register with us for future convenience</p>
-                <label for="asGuest" class="checkout-drop__label checkout-drop__label_reg-form-padding"><input type="radio" name="reg-form" id="asGuest" class="checkout-drop__inpu">Checkout as guest</label>
-                <label for="register" class="checkout-drop__label checkout-drop__label_reg-form-padding"><input type="radio" checked name="reg-form" id="register">Register</label>
+                <p class="checkout-drop__comments checkout-drop__comments_reg-form-pb">Register with us for future convenience</p>
+                <input type="radio" name="reg-form" id="asGuest" class="checkout-drop__input-radio">
+                <label for="asGuest" class="checkout-drop__label checkout-drop__label_reg-form">Checkout as guest</label>
+                <input type="radio" checked name="reg-form" id="register" class="checkout-drop__input-radio">
+                <label for="register" class="checkout-drop__label checkout-drop__label_reg-form">Register</label>
                 <p class="checkout-drop__title">register and save time!</p>
                 <p class="checkout-drop__comments">
                     Register with us for future convenience<br><br>
                     &raquo; Fast and easy checkout<br>
                     &raquo; Easy access to your order history and status
                 </p>
-                <input type="button" value="Continue">
+                <input type="button" value="Continue" class="checkout-drop__button">
             </form>
             <form action="#" class="checkout-drop__form">
                 <p class="checkout-drop__title">Already registered?</p>
-                <p class="checkout-drop__comments checkout-drop__comments_reg-for-pb">Please log in below</p>
+                <p class="checkout-drop__comments checkout-drop__comments_reg-form-pb">Please log in below</p>
             </form>
         </div>
 

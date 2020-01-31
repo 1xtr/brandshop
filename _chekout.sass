@@ -29,10 +29,37 @@
     font-size: 13px
     color: #b3b2b2
     line-height: 20px
-    &_reg-for-pb
+    &_reg-form-pb
       margin-bottom: 25px
   &__label
-    display: block
-    &_reg-form-padding
+    @include flex-box(flex-start, center)
+    cursor: pointer
+    font-size: 12px
+    color: #222222
+    text-transform: uppercase
+    position: relative
+    &:before
+      content: ''
+      display: inline-block
+      margin-right: 15px
+      height: 14px
+      width: 14px
+      background-color: #ffffff
+      border: 2px solid #555555
+      border-radius: 14px
+    &_reg-form
       margin: 10px 0
+
+  &__input-radio
+    display: none
+    //&:checked + &__label:before
+
+  &__button
+    font-size: 14px
+    font-weight: bold
+    color: #4a4a4a
+    text-transform: uppercase
+    padding: 19px 54px
+
+
 

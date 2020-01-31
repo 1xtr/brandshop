@@ -238,14 +238,41 @@
   color: #b3b2b2;
   line-height: 20px;
 }
-.checkout-drop__comments_reg-for-pb {
+.checkout-drop__comments_reg-form-pb {
   margin-bottom: 25px;
 }
 .checkout-drop__label {
-  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  color: #222222;
+  text-transform: uppercase;
+  position: relative;
 }
-.checkout-drop__label_reg-form-padding {
+.checkout-drop__label:before {
+  content: "";
+  display: inline-block;
+  margin-right: 15px;
+  height: 14px;
+  width: 14px;
+  background-color: #ffffff;
+  border: 2px solid #555555;
+  border-radius: 14px;
+}
+.checkout-drop__label_reg-form {
   margin: 10px 0;
+}
+.checkout-drop__input-radio {
+  display: none;
+}
+.checkout-drop__button {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  padding: 19px 54px;
 }
 
 * {
