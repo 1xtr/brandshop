@@ -197,9 +197,16 @@
                 </p>
                 <input type="button" value="Continue" class="checkout-drop__button">
             </form>
-            <form action="#" class="checkout-drop__form">
+            <form action="#" name="auth-form" class="checkout-drop__form">
                 <p class="checkout-drop__title">Already registered?</p>
                 <p class="checkout-drop__comments checkout-drop__comments_reg-form-pb">Please log in below</p>
+                <label for="auth-form-email">EMAIL ADDRESS<span class="form-req-fields">*</span></label>
+                <input type="email" name="auth-form" id="auth-form-email">
+                <label for="auth-form-passwd">PASSWORD<span class="form-req-fields">*</span></label>
+                <input type="password" name="auth-form" id="auth-form-passwd">
+                <p class="form-req-fields">* Required Fileds</p>
+                <input type="button" value="LOG IN" class="checkout-drop__button">
+                <input type="button" value="Forgot Password?" class="checkout-drop__button checkout-drop__button_forgot">
             </form>
         </div>
 

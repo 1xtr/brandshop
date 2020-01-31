@@ -268,11 +268,23 @@
   display: none;
 }
 .checkout-drop__button {
+  display: inline-block;
   font-size: 14px;
   font-weight: bold;
   color: #4a4a4a;
   text-transform: uppercase;
   padding: 19px 54px;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  outline: 1px solid #eaeaea;
+}
+.checkout-drop__button_forgot {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: #fff;
+  padding: 19px 30px;
 }
 
 * {
