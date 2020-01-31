@@ -182,11 +182,11 @@
     <div class="checkout-list">
         <span class="checkout-list__title">01. Shipping Address</span>
         <div class="checkout-drop">
-            <form action="#" class="checkout-drop__form">
+            <form action="#" name="reg-form" class="checkout-drop__form">
                 <p class="checkout-drop__title">Check as a guest or register</p>
-                <p class="checkout-drop__comments">Register with us for future convenience</p>
-                <input type="checkbox" name="asGuest" id="asGuest">Checkout as guest
-                <input type="checkbox" name="register" id="register">Register
+                <p class="checkout-drop__comments checkout-drop__comments_reg-for-pb">Register with us for future convenience</p>
+                <label for="asGuest" class="checkout-drop__label checkout-drop__label_reg-form-padding"><input type="radio" name="reg-form" id="asGuest" class="checkout-drop__inpu">Checkout as guest</label>
+                <label for="register" class="checkout-drop__label checkout-drop__label_reg-form-padding"><input type="radio" checked name="reg-form" id="register">Register</label>
                 <p class="checkout-drop__title">register and save time!</p>
                 <p class="checkout-drop__comments">
                     Register with us for future convenience<br><br>
@@ -197,7 +197,7 @@
             </form>
             <form action="#" class="checkout-drop__form">
                 <p class="checkout-drop__title">Already registered?</p>
-                <p class="checkout-drop__comments">Please log in below</p>
+                <p class="checkout-drop__comments checkout-drop__comments_reg-for-pb">Please log in below</p>
             </form>
         </div>
 

@@ -231,6 +231,21 @@
   font-weight: bold;
   color: #222222;
   text-transform: uppercase;
+  padding: 15px 0;
+}
+.checkout-drop__comments {
+  font-size: 13px;
+  color: #b3b2b2;
+  line-height: 20px;
+}
+.checkout-drop__comments_reg-for-pb {
+  margin-bottom: 25px;
+}
+.checkout-drop__label {
+  display: block;
+}
+.checkout-drop__label_reg-form-padding {
+  margin: 10px 0;
 }
 
 * {
