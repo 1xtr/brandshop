@@ -217,15 +217,18 @@
 }
 
 .checkout-drop {
-  margin-left: 35px;
-  margin-bottom: 80px;
+  padding-left: 35px;
+  padding-bottom: 80px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .checkout-drop__form {
   width: 390px;
+}
+.checkout-drop__form_first {
+  margin-right: 160px;
 }
 .checkout-drop__title {
   font-size: 13px;
@@ -291,7 +294,7 @@
   background-color: #fff;
   border: none;
   outline: 1px solid #eaeaea;
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
 .checkout-drop__button:hover {
   background-color: #ef5b70;
