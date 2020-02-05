@@ -1,0 +1,13 @@
+$siteColor1: #f16d7f
+$siteColor2: #ef5b70
+
+@mixin flexible
+  display: flex
+  justify-content: center
+  align-items: center
+
+@mixin flex-box ($h_align, $v_align)
+  //@include flex-box (center, flex-start)
+  display: flex
+  justify-content: $h_align
+  align-items: $v_align
