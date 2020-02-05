@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0e319aac-9bd3-40b3-ab15-e3eccc819bfd" name="BrandShop" url="https://brandshop.trendco.space">
+        <fileTransfer host="brandshop.trendco.space" port="22" accessType="SFTP" authAgent="true">
+          <advancedOptions>
+            <advancedOptions controlEncoding="utf-8" dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+    <groups>
+      <group>
+        <name>MY-VDS</name>
+        <servers>
+          <name value="BrandShop" />
+        </servers>
+      </group>
+    </groups>
+  </component>
+</project>
