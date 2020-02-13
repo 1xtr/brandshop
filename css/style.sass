@@ -19,7 +19,7 @@ a
 
 //@media screen and (min-width: 1150px)
 .center
-  padding: 0 calc(50% - 570px)
+  padding: 0 calc(50vw - 570px)
 
 .header
   max-height: 100px
@@ -68,7 +68,7 @@ a
     justify-content: space-between
     align-items: center
     position: relative
-    height: 38px
+    height: 36px
     width: 87px
     padding-left: 15px
     padding-right: 15px
@@ -103,10 +103,16 @@ a
     color: #222222
     &::-webkit-input-placeholder
       color: #a4a4a4
+      font-size: 12px
+      opacity: .9
+    &::-moz-placeholder
+      color: #a4a4a4
+      font-size: 12px
+      opacity: .9
 
   &__button
-    width: 38px
-    height: 38px
+    width: 36px
+    height: 36px
     background-color: #fff
     border: none
     font-size: 14px
