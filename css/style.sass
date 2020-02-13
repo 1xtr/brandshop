@@ -1,3 +1,5 @@
+@import "vars"
+
 *
   margin: 0
   padding: 0
@@ -15,3 +17,52 @@ a
 //@media screen and (min-width: 1150px)
 .center
   padding: 0 calc(50% - 570px)
+
+.header
+  max-height: 100px
+  padding-top: 25px
+  padding-bottom: 25px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.17)
+  &__left, &__right
+    display: flex
+    align-items: center
+  &__left
+    justify-content: flex-start
+  &__right
+    justify-content: flex-end
+
+.logo
+  display: flex
+  &__top
+    margin-right: 37px
+
+  &__link_text
+    display: flex
+    margin-top: 13px
+    font-size: 27px
+    font-weight: 300
+    color: #222222
+    text-align: left
+    letter-spacing: 0.025em
+    line-height: 32px
+    text-transform: uppercase
+  &_D-letter
+    font-weight: 900
+    color: $siteColor1
+
+  &__img
+    &_top
+      margin-right: 12px
+
+.search
+  &__drop
+    display: none
+
+
+
+
+
+
