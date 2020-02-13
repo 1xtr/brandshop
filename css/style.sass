@@ -5,6 +5,9 @@
   padding: 0
   box-sizing: border-box
 
+*:focus
+  outline: none
+
 body
   font-family: Lato, sans-serif, FontAwesome
 
@@ -52,14 +55,52 @@ a
   &_D-letter
     font-weight: 900
     color: $siteColor1
-
   &__img
     &_top
       margin-right: 12px
 
 .search
+  display: flex
+  border: 1px solid #e6e6e6
+  border-radius: 3px
+  &__browse
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+    height: 38px
+    width: 87px
+    padding-left: 15px
+    padding-right: 15px
+    border-right: 1px solid #e6e6e6
+    &::after
+      font-family: FontAwesome, sans-serif
+      color: #838383
+      content: '\f0d7'
+      margin-left: 8px
+      width: 10px
+      font-size: 14px
+      line-height: 32px
+      font-weight: 400
+      letter-spacing: 0.025em
+      color: #838383
   &__drop
     display: none
+    position: absolute
+  &__text
+    border: none
+    border-right: 1px solid #e6e6e6
+    max-width: 280px
+    padding: 0 15px
+  &__button
+    width: 37px
+    height: 37px
+    background-color: #fff
+    border: none
+    font-size: 14px
+    color: #a4a4a4
+    letter-spacing: 0.03em
+    line-height: 32px
 
 
 
