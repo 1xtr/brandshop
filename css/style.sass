@@ -1,5 +1,5 @@
 @import "vars"
-@import "m768"
+
 
 *
   margin: 0
@@ -18,10 +18,17 @@ a
 .li
   list-style-type: none
 
-//@media screen and (min-width: 1150px)
-.center
-  padding: 0 calc(50vw - 570px)
+.display_none
+  display: none
 
+//@media screen and (min-width: 1150px)
+//.center
+//  padding: 0 calc(50vw - 570px)
+
+.logo
+  display: flex
+  &__top
+    margin-right: 37px
 .header
   max-height: 100px
   padding-top: 25px
@@ -151,5 +158,5 @@ a
     position: absolute
 
 
-
+@import "m768"
 
