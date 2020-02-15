@@ -29,12 +29,13 @@ a
   justify-content: space-between
   align-items: center
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.17)
-  &__left, &__right
+  &__left
     display: flex
     align-items: center
-  &__left
     justify-content: flex-start
   &__right
+    display: flex
+    align-items: center
     justify-content: flex-end
 
 .logo
@@ -81,6 +82,7 @@ a
     background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%)
     &:hover
       box-shadow: 0 0 10px 1px #f16d7f4D
+      cursor: pointer
     &::after
       font-family: FontAwesome, sans-serif
       color: #838383
@@ -126,9 +128,12 @@ a
     &:hover
       box-shadow: 0 0 10px 1px #f16d7f4D
       background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%)
+      cursor: pointer
 
 
-
+.user-menu
+  position: relative
+  
 
 
 
